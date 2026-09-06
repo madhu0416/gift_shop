@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Hero(){return <section className="hero"><div className="hero-copy"><div><span className="eyebrow">Thoughtful gifting</span><h1>Every moment deserves a <em>gift.</em></h1><p>Premium gifting for every celebration.</p><div className="hero-actions"><Link href="/gifts-mall" className="btn-primary">Shop Gifts</Link></div></div></div><div className="hero-media"/></section>}

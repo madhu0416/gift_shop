@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@gifting/types": ["packages/types/src"],
+      "@gifting/api-client": ["packages/api-client/src"],
+      "@gifting/validation": ["packages/validation/src"],
+      "@gifting/constants": ["packages/constants/src"],
+      "@gifting/utils": ["packages/utils/src"]
+    }
+  }
+}

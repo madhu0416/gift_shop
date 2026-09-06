@@ -1,0 +1,5 @@
+import { Header, Footer, MobileNav } from '@/components/Site';
+import { Section, SectionHeading, ImageCardRail, ProductGrid } from '@/components/Blocks';
+import { comboCards, products } from '@/lib/data';
+import Link from 'next/link';
+export default function WeddingCombos(){return <><Header/><main><section className="collection-hero"><div className="collection-hero-copy"><span className="eyebrow">Giftly Wedding Combos</span><h1>Complete gifting,<br/>beautifully curated.</h1><p>Choose a ready-made combination for the bride, groom, home, celebration or complete wedding. These are merchandising concepts ready to connect to real inventory later.</p><Link href="/wedding" className="btn-secondary">Back to Wedding</Link></div></section><Section><SectionHeading title="Explore All Combos" subtitle="Designed around real wedding shopping journeys"/><ImageCardRail items={comboCards} wide/></Section><Section tone="pink"><SectionHeading title="Combo Best Sellers" subtitle="Popular combinations customers can discover first"/><ProductGrid items={products.slice(4,10)} cols={6}/></Section></main><Footer/><MobileNav/></>}

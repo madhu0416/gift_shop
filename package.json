@@ -1,0 +1,20 @@
+{
+  "name": "gifting-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "start:web": "npm run start --workspace=apps/web",
+    "lint:web": "npm run lint --workspace=apps/web",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "assets:download": "node scripts/download-assets.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
